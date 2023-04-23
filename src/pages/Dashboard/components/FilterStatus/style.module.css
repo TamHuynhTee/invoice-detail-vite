@@ -1,0 +1,60 @@
+.switcher_container {
+  height: 24px;
+  position: relative;
+}
+
+.switcher_result {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+
+.switch_toggle:checked ~ .switcher_overlay,
+.switch_toggle:checked ~ .overlay_hidden {
+  display: block;
+}
+
+.overlay_hidden {
+  position: fixed;
+  background: transparent;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 1;
+}
+
+.switcher_overlay {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  background: #ffffff;
+  box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  padding: 24px;
+  z-index: 10;
+  min-width: 180px;
+  width: max-content;
+  right: 0;
+}
+
+.switch_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.switch_item {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.switch_item > label {
+  cursor: pointer;
+}

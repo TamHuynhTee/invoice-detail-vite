@@ -1,0 +1,49 @@
+.invoice_item_wrapper {
+  border-radius: 8px;
+  padding: 24px;
+  @apply bg-white;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+
+.invoiceID {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  margin-bottom: 24px;
+}
+.customerName {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-bottom: 24px;
+
+  text-align: right;
+}
+.dueDate {
+  grid-column: 1/2;
+  grid-row: 2/3;
+
+  margin-bottom: 9px;
+}
+.totalCharge {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.statusBox {
+  grid-column: 2/3;
+  grid-row: 2/4;
+
+  text-align: right;
+}
+
+:global(.dark) .invoice_item_wrapper {
+  @apply bg-dark-1E;
+}
+
+@media screen and (min-width: 640px) {
+  .invoice_item_wrapper {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+}

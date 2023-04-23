@@ -1,0 +1,12 @@
+.button_add_invoice {
+  @apply bg-violet-7C;
+  @apply text-white;
+}
+
+.button_add_invoice:hover {
+  @apply bg-violet-92;
+}
+
+.phone_remove {
+  display: none;
+}

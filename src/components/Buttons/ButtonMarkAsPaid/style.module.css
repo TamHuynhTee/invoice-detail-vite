@@ -1,0 +1,8 @@
+.button_mark_as_paid {
+  @apply bg-violet-7C;
+  @apply text-white;
+}
+
+.button_mark_as_paid:hover {
+  @apply bg-violet-92;
+}

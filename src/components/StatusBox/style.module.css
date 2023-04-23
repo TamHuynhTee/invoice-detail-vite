@@ -1,0 +1,31 @@
+.draft_bg {
+  background: rgba(55, 59, 83, 0.0571);
+}
+.draft_text {
+  color: rgb(55, 59, 83);
+  fill: rgb(55, 59, 83);
+}
+
+.pending_bg {
+  background: rgba(255, 143, 0, 0.0571);
+}
+.pending_text {
+  color: rgb(255, 143, 0) !important;
+  fill: rgb(255, 143, 0) !important;
+}
+
+.paid_bg {
+  background: rgba(51, 214, 159, 0.0571);
+}
+.paid_text {
+  color: rgb(51, 214, 159) !important;
+  fill: rgb(51, 214, 159) !important;
+}
+
+:global(.dark) .draft_bg {
+  background: rgba(223, 227, 250, 0.0571);
+}
+:global(.dark) .draft_text {
+  color: rgb(223, 227, 250);
+  fill: rgb(223, 227, 250);
+}

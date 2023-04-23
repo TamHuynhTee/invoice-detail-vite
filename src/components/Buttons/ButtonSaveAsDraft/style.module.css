@@ -1,0 +1,10 @@
+.button_add_invoice {
+  @apply bg-violet-7C;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.button_add_invoice:hover {
+  @apply bg-violet-92;
+}
