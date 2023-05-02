@@ -7,6 +7,8 @@ import { DateJS } from '@/helpers/DateJS';
 import { InvoiceListItemType } from '@/models';
 import StatusBox from '@/components/StatusBox';
 import style from './style.module.css';
+import IconArrowRight from '@/components/Icons/IconArrowRight';
+import { Link } from 'react-router-dom';
 
 type Props = {
   invoice: InvoiceListItemType;
@@ -15,7 +17,7 @@ type Props = {
 const InvoiceItem = (props: Props) => {
   const { invoice } = props;
   return (
-    <div className={style.invoice_item_wrapper}>
+    <Link to={`/invoice/${invoice.id}`} className={style.invoice_item_wrapper}>
       <span className={style.invoiceID}>
         <Heading_S_Variant>
           <span className="text-pale-7E">#</span>
@@ -37,10 +39,12 @@ const InvoiceItem = (props: Props) => {
       </span>
       <div className={style.statusBox}>
         <StatusBox status={invoice.status} />
+        {/* from tablet add arrow right*/}
+        <div className="hidden tablet:block ml-5">
+          <IconArrowRight />
+        </div>
       </div>
-
-      {/* from tablet add arrow right*/}
-    </div>
+    </Link>
   );
 };
 

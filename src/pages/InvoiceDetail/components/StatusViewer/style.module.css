@@ -1,0 +1,33 @@
+.actionButtons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  column-gap: 8px;
+
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+
+  padding: 20px 24px;
+
+  @apply bg-white;
+}
+
+:global(.dark) .actionButtons {
+  @apply bg-dark-1E;
+}
+
+@media screen and (min-width: 640px) {
+  .actionButtons {
+    position: unset;
+    margin-left: auto;
+
+    justify-content: flex-end;
+
+    padding: 0;
+
+    background-color: transparent;
+  }
+}

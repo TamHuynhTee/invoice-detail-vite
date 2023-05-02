@@ -1,0 +1,14 @@
+.button_go_back {
+  @apply text-black;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+}
+.button_go_back > svg {
+  @apply fill-violet-7C;
+}
+
+.button_go_back:hover {
+  @apply text-pale-7E;
+  cursor: pointer;
+}

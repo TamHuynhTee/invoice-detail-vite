@@ -1,6 +1,4 @@
-import IconPlus from '@/components/Icons/IconPlus';
 import ButtonBase, { ButtonBaseProps } from '../ButtonBase';
-import style from './style.module.css';
 
 export const ButtonAddNewItem = (props: ButtonBaseProps) => {
   return (
